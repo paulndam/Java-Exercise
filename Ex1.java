@@ -23,6 +23,10 @@ public class Ex1 {
         boolean talk = true;
         System.out.println(parrotTrouble(talk, hour1));
 
+        int num1 = 9;
+        int num2 = 9;
+        System.out.println(makes10(num1, num2));
+
     }
 
     // The parameter weekday is true if it is a weekday, and the parameter vacation
@@ -101,6 +105,29 @@ public class Ex1 {
 
     public static boolean parrotTrouble(boolean talking, int hour){
         return (talking && (hour < 7 || hour > 20));
+    }
+
+
+    //Given 2 ints, a and b, return true if one if them is 10 or if their sum is 10.
+    // makes10(9, 10) → true
+    // makes10(9, 9) → false
+    // makes10(1, 9) → true
+
+    public static boolean makes10(int a, int b){
+
+        //int num = 10;
+
+        if(a == 10){
+            return true;
+        }
+        if(b==10){
+            return true;
+        }
+        if(a + b == 10){
+            return true;
+        }else{
+            return false;
+        }
     }
 
 
